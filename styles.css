@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========COLOR ROOT======= */
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --raspberry: hsl(332, 51%, 32%);
+  --rose-white:hsl(330, 100%, 98%);
+  --light-grey:hsl(30, 18%, 87%);
+  --eggshell:hsl(30, 54%, 90%);
+  --charcoal:hsl(24, 5%, 18%);
+}
+
+/*=========TYPOGRAPHY=========*/
+
+body {
+  background-color: var(--eggshell);
+  font-size: 16px;
+  font-family: "Outfit";
+  font-weight: 400px;
+}
+
+.strong {
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+h1,h2 {
+  font-family: 'Young Serif';
+  font-weight: 400;
+  margin-bottom: .5em;
+  margin-top: 1.3em;
+}
+
+h2 {
+  color: var(--nutmeg);
+}
+
+.letter-color {
+  font-weight: 700;
+  color: var(--nutmeg);
+}
+
+/*===========LAYOUT =========*/
+
+.wrapper {
+  border-radius: 15px;
+  background: white;
+  width: 80%;
+  margin: 2em auto;
+  padding: 1em 2em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  max-height: 80vh;
+  border-radius: 15px;
+  margin: 1em auto;
+  /* padding: .5em; */
+}
+
+/* ========HEADER============ */
+
+header {
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 1440px;
+}
+
+/* ========PINK BOX========= */
+
+.pink-box {
+  padding: 1.5em;
+  background-color: var(--rose-white);
+  /* margin: 1em; */
+  /* padding-left: 2em; */
+  border-radius: 10px;
+  /* padding-top: 1.5em; */
+  /* padding-bottom: 1.5em; */
+}
+
+
+
+.pink-box h3 {
+  padding-bottom: 0.35em;
+  font-size: 1.4rem;
+  color: var(--raspberry);
+}
+
+.pink-box ul {
+  /* padding-left: 2em; */
+  margin-left: 2em;
+}
+
+.pink-box li {
+  padding: .8em;
+}
+
+.pink-box li::marker {
+  color: var(--raspberry);
+}
+
+/* =======INGREDIENTS BOX===== */
+
+.ingredients-box {
+  /* padding: 1.5em; */
+  padding-bottom: 1.5em;
+  border-bottom: 1.5px solid hsl(30, 18%, 87%);
+}
+
+.ingredients-box ul {
+  padding-left: 1.5em;
+  line-height: 1.5em; 
+}
+
+.ingredients-box ol {
+  padding-left: 1.5em;
+  line-height: 1.5em;
+}
+
+.ingredients-box li {
+  padding: .5em;
+}
+
+
+.ingredients-box li::marker {
+  color: var(--nutmeg);
+}
+
+/* =======NUTRITION BOX========= */
+
+.nutrition-box td {
+  padding: 1em 2em;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.nutrition-box {
+  width: 90%;
+}
+
+.no-bottom-border td {
+  border-bottom: none;
+}
+
+/*=============MOBILE MEDIA QUERY=============*/
+
+@media (min-width: 375px) and (max-width:600px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .wrapper-mobile {
+    padding: 0 2em;
+  }
+
+  h1 {
+    margin-top: .5em;
+  }
+}
